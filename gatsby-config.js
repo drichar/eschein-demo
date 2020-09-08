@@ -1,6 +1,4 @@
-// require('dotenv').config({
-//   path: `.env.${process.env.NODE_ENV}`,
-// })
+require('dotenv').config()
 
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
@@ -25,9 +23,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Evan Schein Website (Contenful demo)',
   },
-  pathPrefix: '/gatsby-contentful-starter',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
